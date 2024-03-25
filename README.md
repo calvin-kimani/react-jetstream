@@ -2,7 +2,8 @@
   
 React JetStream is a sleek and simplistic React template, elegantly designed with Tailwind CSS, inspired by Laravel Jetstream. Perfect for effortless development of modern web applications with a clean and minimalist aesthetic.
     
-## 🧐 Features    
+## 🧐 Features
+### UI
 - Login
 - Registration
 - Forgot Password
@@ -10,6 +11,8 @@ React JetStream is a sleek and simplistic React template, elegantly designed wit
         
 ## 🛠️ Tech Stack
 - [React](https://reactjs.org/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [React Router](https://reactrouter.com/en/main)
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
     
