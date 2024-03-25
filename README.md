@@ -1,6 +1,9 @@
 # <p align="center">React JetStream</p>
-  
-React JetStream is a sleek and simplistic React template, elegantly designed with Tailwind CSS, inspired by Laravel Jetstream. Perfect for effortless development of modern web applications with a clean and minimalist aesthetic.
+
+React JetStream is a **Laravel Jetstream** inspired basic UI starter kit for React projects. Currently, It provides user interfaces for authentication such as login and registration.
+
+Built with React and Tailwind CSS.
+
     
 ## 🧐 Features
 ### UI
@@ -18,21 +21,39 @@ React JetStream is a sleek and simplistic React template, elegantly designed wit
     
 ## 🛠️ Installation    
  ```bash
-npx @calvin-kimani/create-jetstream-app@latest test
+npm create react-jetstream@latest project-name
 ```
 
 ## Screenshots
-![Welcome](./screenshots/Welcome.png)
-![Login](./screenshots/Login.png)
-![Register](./screenshots/Register.png)
-![Forgot Password](./screenshots/ForgotPassword.png)
-![Confirm Password](./screenshots/ConfirmPassword.png)
+
+<div align="center">
+  <figure>
+    <img src="./screenshots/Welcome.png" alt="Welcome" width="300"/>
+    <figcaption>Welcome</figcaption>
+  </figure>
+  <figure>
+    <img src="./screenshots/Login.png" alt="Login" width="300"/>
+    <figcaption>Login</figcaption>
+  </figure>
+  <figure>
+    <img src="./screenshots/Register.png" alt="Register" width="300"/>
+    <figcaption>Register</figcaption>
+  </figure>
+  <figure>
+    <img src="./screenshots/ForgotPassword.png" alt="Forgot Password" width="300"/>
+    <figcaption>Forgot Password</figcaption>
+  </figure>
+  <figure>
+    <img src="./screenshots/ConfirmPassword.png" alt="Confirm Password" width="300"/>
+    <figcaption>Confirm Password</figcaption>
+  </figure>
+</div>
+
 
 ## 🍰 Contributing    
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Before contributing, please read the [code of conduct](CODE_OF_CONDUCT.md) & [contributing guidelines](CONTRIBUTING.md).
- 
+<!-- Before contributing, please read the [code of conduct](CODE_OF_CONDUCT.md) & [contributing guidelines](CONTRIBUTING.md). -->
 
 ## ❤️ Support  
 A simple star to this project repo is enough to keep me motivated on this project for days. If you find your self very much excited with this project let me know with a tweet.

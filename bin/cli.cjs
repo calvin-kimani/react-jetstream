@@ -8,36 +8,38 @@ const rimraf = require('rimraf');
 const runCommand = command => {
     try {
         execSync(`${command}`, { stdio: 'inherit' });
-    } catch (e) {
-        console.error(e);
+    } catch (error) {
+        console.error(error);
         return false;
     }
 
     return true;
-}
+};
 
 const repoName = process.argv[2];
 
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/calvin-kimani/create-jetstream-app.git ${repoName}`;
+const gitCheckoutCommand = `git clone --depth 1 https://github.com/calvin-kimani/react-jetstream.git ${repoName}`;
 const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) process.exit(-1);
 
 rimraf.sync(path.join(repoName, 'screenshots'));
 rimraf.sync(path.join(repoName, '.git'));
 
-
 const packageJsonPath = `${repoName}/package.json`;
 const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
 delete packageJson.bin;
-packageJson.description = "";
-packageJson.type = "module";
-packageJson.author = "";
+delete packageJson.bugs;
+delete packageJson.engines;
+delete packageJson.repository;
+delete packageJson.homepage;
+delete packageJson.description;
+delete packageJson.author;
+delete packageJson.version;
 packageJson.name = `${repoName}`;
 packageJson.private = true;
-packageJson.version = '0.0.0';
 
-console.log("\nCongratulations! Your React JetStream App is ready.")
-console.log("run the following commands to start.")
+console.log("\nCongratulations! Your React JetStream App is ready.");
+console.log("Run the following commands to start:");
 console.log(` cd ${repoName}`);
 console.log(` npm install`);
 console.log(` npm run dev\n`);
